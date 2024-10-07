@@ -168,6 +168,7 @@ func (cfg *apiConfig) updateRemainder(w http.ResponseWriter, r *http.Request, us
 }
 
 func (cfg *apiConfig) deleteRemainder(w http.ResponseWriter, r *http.Request, user database.User) {
+	// get url params
 	idStr := chi.URLParam(r, "ID")
 
 	id, err := uuid.Parse(idStr)
