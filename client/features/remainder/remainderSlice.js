@@ -33,7 +33,7 @@ export const getTheRemainder = createAsyncThunk(
 )
 
 export const updateRemainder = createAsyncThunk(
-    "remainder/updateRemainder",
+    "remainder/updateRemainder" ,
     async (data, thunkAPI) => {
         const token = thunkAPI.getState().user.token
         try {
